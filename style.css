@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+main{
+    margin: 2em;
+}
+/* -----------------------nav------------------------ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img, .navigfin img{
+    width: 40px;
+}
+.navig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    color: #a59f9f;
+}
+.navigfin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.navigfin p{
+    background: #fff;
+    border-radius: 15px;
+    color: #000;
+    padding: 5px;
+}
+/* -----------------------fin nav----------------- */
+
+/* ----------------------entete----------------- */
+.artcl{
+    text-align: center;
+}
+/* *************entete discover********** */
+.discover .flex1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.discover .flex1 h2{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.discover .flex2{
+    display: flex;
+    color: #a59f9f;
+    justify-content: space-between;
+}
+.flex2 span{
+    background: rgb(73, 73, 249);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.discover .flex2 div p{
+    background: #585555;
+    border-radius: 15px;
+    padding: 10px 50px 5px  10px;
+}
+/* *******************entete article*********** */
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(146, 185, 209);
+    text-align: center;
+    padding: 30px;
+    border-radius: 40px;
+}
+.article h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow',  sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: rgb(9, 9, 41);
+}
+.article .p{
+    color:rgb(50, 50, 110) ;
+}
+.article .p span{
+    color:rgb(9, 9, 41) ;
+    font-weight: bold;
+}
+.imgcolor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    white-space: nowrap;
+    width: 130px;
+    border-radius: 30px;
+}
+.article  img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+@media screen and (max-width:100px){
+    
+}
