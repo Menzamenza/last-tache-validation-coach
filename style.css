@@ -124,6 +124,140 @@ nav{
     height: 30px;
     border-radius: 50%;
 }
+/* ---------------------------fin entete---------------------------- */
+
+/* ----------------------------section grille tof-------------------- */
+.grille-tof img{
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.bloc-flex-img{
+    position: relative;
+}
+.z2 img{
+    position: absolute;
+    top: 5%;
+    right: 15%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.gt{
+    width: 30px;
+    height: 30px;
+    background-image: url(couleurs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.bloc-flex-img .z{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    width:160px;
+    height: 50px;
+    position: absolute;
+    bottom: 10%;
+    left: 100px;
+    border-radius: 30px;
+}
+.bloc-flex-txt{
+    width: 25vw; 
+}
+.line1,.line2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bloc-flex{
+    display: flex;
+    flex-direction: column;
+}
+.bloc-flex-txt div{
+    display: flex;
+    justify-content: space-around;
+}
+.div-border, .div-border-blue{
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.div-border-blue{
+    background: rgb(130, 130, 247);
+    border: #000;
+}
+.line3 div{
+    border: 1px solid #5b5a5a;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    color: #5b5a5a;
+}
+.line3 div:nth-child(4){
+    color: #fff;
+    border-color: #fff;
+}
+.line3 div:last-child{
+    background: rgb(73, 73, 189);
+}
+.line3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 30px;
+}
+/* ---------------------fin grille tof------------------ */
+
+/*---------------------le footer---------------------- */
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em;
+    background-color: #a59f9f;
+    opacity: 0.8;
+    color: #fff;
+}
+input[type=button]{
+    width: 350px;
+    height: 40px;
+    border-radius: 30px;
+    background: #000; 
+    border-color: #bdb5b5;
+    color: #7d7878;
+    text-align: start;
+}
+input[type=submit]{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background: rgb(12, 12, 204);
+    color: #fff;
+}
+.footer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5em ;
+}
+.navigf, .logof{
+    display: flex;
+    gap: 5%;
+}
+.logof img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+}
 @media screen and (max-width:1000px){
     nav{
         display: flex;
@@ -134,7 +268,8 @@ nav{
     }
     .navig{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .flex2{
         display: flex;
@@ -147,5 +282,38 @@ nav{
         gap: 5px;
         font-size: small;
         margin: 20px 0;
+    }
+    .grille-tof{
+        text-align: center;
+    }
+    .line2,.line1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloc-flex-txt{
+        width: 100%;
+    }
+    .grille-tof img{
+        width: 250px;
+        height: 250px;
+    }
+    .z2 img{
+        position: absolute;
+        top: 5%;
+        right: 15%;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
